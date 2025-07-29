@@ -14,7 +14,7 @@ console.log(valueInNumber);  // 33 as output for string "33"
 //NaN as value for undefined
 // 1 for boolean value
 
-//et isLoggedIn = 1 => o/p:  true
+//let isLoggedIn = 1 => o/p:  true
 //let isLoggedIn = 0  => o/p: false
 // let isLoggedIn = "" => o/p: false
 let isLoggedIn = "atharv"
@@ -25,3 +25,27 @@ let somenumber = 33;
 let stringnumber =String(somenumber)
 console.log(stringnumber);
 console.log(typeof stringnumber);
+
+
+//   ***************************   Operations   ************************
+
+let value = 3
+let negValue = -value
+console.log(negValue);
+
+console.log(2**3); // output 8
+
+let str1 ="hello"
+let str2 ="atharv"
+
+console.log(str1+str2)
+
+console.log("1" + 2).      // 12
+console.log(1 + "2");      // 12
+console.log("1" + 2 +2 );  // 122
+console.log(1 + 2 + "2"); // 32
+
+console.log(true);  //true
+console.log(+true);  //1
+console.log(+"");    //0
+
