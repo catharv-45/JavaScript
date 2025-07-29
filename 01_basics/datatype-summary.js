@@ -33,3 +33,9 @@ const myFunction = function(){//function
 console.log(typeof heros);  //object
 console.log(typeof myObj);   //object 
 console.log(typeof myFunction); //function
+
+
+
+// ***************************************************************
+
+// Stack(used for primitive datatype value store), Heap (for Non-Primitive)
