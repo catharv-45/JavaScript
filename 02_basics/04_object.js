@@ -31,7 +31,7 @@ const obj4 ={5:"a", 6:"b"};
 //const obj3 = Object.assign({},obj1,obj2); // add two object
 //output: { '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
 
-const obj3 = {...obj1,...obj2}
+const obj3 = {...obj1,...obj2};   //spread operator
 // { '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
 console.log(obj3);
 
