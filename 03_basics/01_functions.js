@@ -32,3 +32,41 @@ function loginName( username ="Atharv"){
 }
 //console.log(loginName("Atharv"));
 console.log(loginName());
+
+
+// when User add product in cart we don'd know how much 
+//product are in there so require parameter in function 
+//to solve this problem 
+
+function CalculateCartPrice(...num1){ //rest operater :
+      return num1;
+}
+console.log(CalculateCartPrice(200,300,400,2000));
+//[ 200, 300, 400, 2000 ]
+
+//passing object in Function
+const user = {
+    username:"Atharv",
+    price:200
+
+}
+
+function handleObject(anyobject){
+      console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+
+}
+// handleObject(user);
+
+handleObject({
+    username:"sam",
+    price:399
+})
+
+// passing Array in function
+const myNewArray = [ 200,400,100,500]
+
+function returnSecondValue(getArray){ //getArray return same value of myNewArray
+    return getArray[1];
+}
+console.log(returnSecondValue(myNewArray)); // Accessing second element in array:400
+
