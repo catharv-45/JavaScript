@@ -1,9 +1,11 @@
 // singleton
 //Object.create
+
+
 // object literals
 const mySym = Symbol("key1")
 const JsUser = {
-     name:"Hitesh",
+     name:"Atharv",
      "full name":"Atharv Chavan",
      [mySym]: "mykey1",
      age : 18,
@@ -11,12 +13,15 @@ const JsUser = {
      email:"abchdsjf.com"
 
 }
-console.log(JsUser.age);     // from this we canot access this value
-console.log(JsUser["email"]);
+console.log(JsUser.age);     // 18
+console.log(JsUser["email"]); // abchdsjf.com
+console.log(JsUser.email); // abchdsjf.com
 
 console.log(JsUser["full name"])  // for accessing the full name value
 
+
 console.log(JsUser[mySym]);  //mykey1
+console.log(JsUser.mySym); //undefined
 
 JsUser.email = "Atharv@gmail.com"
 //Object.freeze(JsUser);    // After this it does not allowed to change value of object
