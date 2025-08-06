@@ -22,7 +22,7 @@ do {
     score++;
 } while (score<=10);*/
 
-let score = 11 ;  // it run must one time only difference between while loop
+let score = 11 ;  // it must run one time only difference between while loop
 
 do {
     console.log(`Score is ${score}`);
