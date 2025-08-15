@@ -41,7 +41,7 @@ const books = [
 
 
 
-  let userBooks = books.filter( (bk) => bk.genre === "History") // choose genre as history and return it
+  let userBooks = books.filter( (bk) => bk.genre === "History"); // choose genre as history and return it
   
   userBooks = books.filter ( (bk) => bk.publish >= 2000) // return the object which are publish after 2000
 
