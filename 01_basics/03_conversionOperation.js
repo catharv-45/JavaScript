@@ -17,21 +17,22 @@ console.log(valueInNumber);  // 33 as output for string "33"
 //let isLoggedIn = 1 => o/p:  true
 //let isLoggedIn = 0  => o/p: false
 // let isLoggedIn = "" => o/p: false
+
 let isLoggedIn = "atharv"
 let booleanIsLoggedIn = Boolean(isLoggedIn)
-console.log(booleanIsLoggedIn)
+console.log(booleanIsLoggedIn)  //true
 
 let somenumber = 33;
 let stringnumber =String(somenumber)
-console.log(stringnumber);
-console.log(typeof stringnumber);
+console.log(stringnumber);  //33
+console.log(typeof stringnumber);//string
 
 
 //   ***************************   Operations   ************************
 
 let value = 3
 let negValue = -value
-console.log(negValue);
+console.log(negValue); //-3
 
 console.log(2**3); // output 8
 
@@ -40,7 +41,7 @@ let str2 ="atharv"
 
 console.log(str1+str2)
 
-console.log("1" + 2).      // 12
+console.log("1" + 2);      // 12
 console.log(1 + "2");      // 12
 console.log("1" + 2 +2 );  // 122
 console.log(1 + 2 + "2"); // 32
