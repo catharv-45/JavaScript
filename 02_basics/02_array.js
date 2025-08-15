@@ -10,7 +10,6 @@ const allheros = marvel_heros.concat(dc_heros)
 console.log(allheros);   //[ 'thor', 'Ironman', 'spiderman', 'superman', 'flash', 'batman' ]
 
 const all_new_heros =[...marvel_heros, ...dc_heros]
-
 console.log(all_new_heros);    //[ 'thor', 'Ironman', 'spiderman', 'superman', 'flash', 'batman' ]
 
 const another_array = [1,2,3,[4,5,6],7,[2,3,5,[8,9]]]
