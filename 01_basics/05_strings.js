@@ -6,9 +6,9 @@ console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
 
 const gameName = new String('Atha-rv')
 
-console.log(gameName[0]);        //output:h
+console.log(gameName[0]);        //output:A
 console.log(gameName.__proto__);  //output : {}
-console.log(gameName.length);
+console.log(gameName.length);    //output : 7
 console.log(gameName.toUpperCase());  // ATHA-RV
 console.log(gameName.charAt(2));  // h
 console.log(gameName.indexOf('t')); // 1
