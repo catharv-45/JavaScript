@@ -7,4 +7,4 @@
 
 ((name) =>  {
     console.log(`DB connected too ${name}` );
-})("Atharv")
+})("Atharv");
