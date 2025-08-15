@@ -12,7 +12,7 @@ const regularUser = {
     email:"Atharv@gmail.com",
     fullname:{
         userfullname:{
-            firstname:"Atharv ",
+            firstname:"Atharv",
             lastname:"chavan"
         }
     }
@@ -56,7 +56,7 @@ console.log(Object.entries(tinderUser)); // convert into array
 
 
 console.log(tinderUser.hasOwnProperty('isloggedIn'));
-// false :check that this property is included or not in given object
+// false : check that this property is included or not in given object
 
 const course ={
     coursename: "js in hindi",
@@ -66,7 +66,7 @@ const course ={
 // course.courseInstructor
 
 const {courseInstructor :Instructor} = course; //courseInstructor value stored in new variable Instructor
-console.log(Instructor);
+console.log(Instructor); // Atharv
 
 const navbar = ({company}) => { //destructure
 
