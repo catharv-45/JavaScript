@@ -30,8 +30,8 @@ function loginName( username ="Atharv"){
     }
     return `${username} just logged in `
 }
-//console.log(loginName("Atharv"));
-console.log(loginName());
+console.log(loginName("sahil")); // sahil just logged in
+console.log(loginName()); // Atharv just logged in
 
 
 // when User add product in cart we don'd know how much 
@@ -55,7 +55,7 @@ function handleObject(anyobject){
       console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
 
 }
-// handleObject(user);
+// handleObject(user); // does required object passing we can access element in function
 
 handleObject({
     username:"sam",
@@ -68,5 +68,6 @@ const myNewArray = [ 200,400,100,500]
 function returnSecondValue(getArray){ //getArray return same value of myNewArray
     return getArray[1];
 }
-console.log(returnSecondValue(myNewArray)); // Accessing second element in array:400
+// require array passing in given function
+console.log(returnSecondValue(myNewArray)); // Accessing second element in array:400 
 
