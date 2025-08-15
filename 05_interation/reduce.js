@@ -42,3 +42,7 @@ const shoppingCart = [
 
 const total = shoppingCart.reduce((acc,item) => item.price + acc,0)
 console.log(total);
+// for 1 step : 2999(item.price) + 0(acc) : total:2999
+// for 2 step : 5999(item.price) + 2999(acc) : total:8998
+// for 3 step : 7999(item.price) + 8998(acc) : total:16997
+// for 4 step : 10999(item.price) + 16997(acc) : total:27996
