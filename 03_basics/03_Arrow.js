@@ -8,9 +8,9 @@ const user = {
     }
 
 }
-/*user.welcomeMessage()
+user.welcomeMessage()
 user.username ="Sam";
-user.welcomeMessage()*/
+user.welcomeMessage()
 console.log(this);       // output : {}
 
 //passing object in Function
