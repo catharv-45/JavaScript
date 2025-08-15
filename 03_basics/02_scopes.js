@@ -11,7 +11,7 @@ if (true) {
 
 
 // console.log(a); 
-// console.log(b);
+// console.log(b); // b is not define
 // console.log(c); // it will print the value only out of scope
 
 function one(){ // father cannot take ice-cream from child
