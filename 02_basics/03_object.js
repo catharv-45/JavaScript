@@ -19,7 +19,6 @@ console.log(JsUser.email); // abchdsjf.com
 
 console.log(JsUser["full name"])  // for accessing the full name value
 
-
 console.log(JsUser[mySym]);  //mykey1
 console.log(JsUser.mySym); //undefined
 
