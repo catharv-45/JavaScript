@@ -1,7 +1,7 @@
 const score = 400
 console.log(score)
 
-const balance =new Number(100)
+const balance =new Number(100); // output : [Number: 100]
 console.log(balance);
 
 console.log(balance.toString().length);  //3 as length
@@ -16,8 +16,8 @@ console.log(hunderds.toLocaleString('en-IN'));  //1,00,00,000
 
 // ********************** Maths ****************************
 
-console.log(Math);
-console.log(Math.abs(-4)); // 4 as output
+console.log(Math);  // Object [Math] {}
+console.log(Math.abs(-4)); // 4 as output return absolute value
 console.log(Math.round(4.6)); // 5
 console.log(Math.ceil(4.2));  // 5
 console.log(Math.floor(4.9));  //4
