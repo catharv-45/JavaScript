@@ -18,8 +18,9 @@ console.log(myArr.indexOf(9));    //it show -1 because element is not in array
 
 const newArr = myArr.join();
 
-console.log(myArr);
-console.log(newArr);  // it represent the string
+console.log(myArr);  // output : [ 0, 1, 2, 3, 4, 5, 6, 7 ]
+
+console.log(newArr);  // it represent the string output : 0,1,2,3,4,5,6,7
 
 // slice & splice
 
