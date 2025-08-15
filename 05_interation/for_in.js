@@ -12,7 +12,7 @@ for (const key in myObject) {
     console.log(myObject[key]); // it show value of key
 }
 
-//How to use forin loop for object
+//How to use forin loop for array
 
 const programming = ["js","rb","py","java","cpp"]
 
