@@ -1,0 +1,206 @@
+
+/* ==== Global Styling ==== */
+/* ==== Global Styling ==== */
+body {
+  background: radial-gradient(circle at top, #1e1e2f, #0d0d0d);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Animated Background Glow */
+body::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #ff00cc, #333399);
+  border-radius: 50%;
+  filter: blur(200px);
+  opacity: 0.4;
+  top: -200px;
+  left: -200px;
+  animation: float 8s ease-in-out infinite alternate;
+}
+body::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #00e676, #004d40);
+  border-radius: 50%;
+  filter: blur(200px);
+  opacity: 0.3;
+  bottom: -200px;
+  right: -200px;
+  animation: float 10s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes float {
+  from { transform: translateY(0px); }
+  to { transform: translateY(30px); }
+}
+
+/* ==== Main Container ==== */
+#wrapper {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 25px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3),
+              inset 0 0 20px rgba(255, 255, 255, 0.05);
+  text-align: center;
+  width: 450px;
+  z-index: 10;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#wrapper:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px rgba(0, 255, 255, 0.6),
+              inset 0 0 25px rgba(255, 255, 255, 0.08);
+}
+
+/* ==== Headings ==== */
+h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #ff00cc, #00ffff);
+  background-clip: text;              /* Standard */
+  -webkit-background-clip: text;      /* For Chrome/Safari */
+  color: transparent;                 /* Standard */
+  -webkit-text-fill-color: transparent; /* For Chrome/Safari */
+  text-shadow: 0 0 10px rgba(255, 0, 204, 0.8);
+  animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #ff00cc; }
+  to { text-shadow: 0 0 25px #00ffff; }
+}
+
+p {
+  font-size: 16px;
+  margin: 8px 0;
+  color: #ddd;
+}
+
+/* ==== Input Field ==== */
+#guessField {
+  color: #fff;
+  background: transparent;
+  width: 260px;
+  height: 55px;
+  font-size: 22px;
+  border-radius: 12px;
+  border: 2px solid #00ffff;
+  margin: 15px 0;
+  text-align: center;
+  outline: none;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
+}
+
+#guessField:focus {
+  border-color: #ff00cc;
+  box-shadow: 0 0 18px #ff00cc, 0 0 28px #00ffff;
+  transform: scale(1.05);
+}
+
+/* ==== Submit Button ==== */
+#subt {
+  background: linear-gradient(135deg, #ff00cc, #00ffff);
+  color: #fff;
+  width: 230px;
+  height: 55px;
+  border-radius: 15px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6),
+              0 0 30px rgba(255, 0, 204, 0.5);
+}
+
+#subt:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.9),
+              0 0 45px rgba(255, 0, 204, 0.8);
+}
+
+#subt:active {
+  transform: translateY(0px) scale(0.98);
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.6);
+}
+
+/* ==== Results Section ==== */
+.resultParas {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0 0 15px rgba(0, 255, 255, 0.1);
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Previous guesses */
+.guesses {
+  font-weight: bold;
+  color: #00e676;
+  font-size: 18px;
+  text-shadow: 0 0 8px #00e676;
+}
+
+/* Remaining attempts */
+.lastResult {
+  font-weight: bold;
+  color: #ff1744;
+  font-size: 18px;
+  text-shadow: 0 0 8px #ff1744;
+}
+
+/* High / Low message */
+.lowOrHi {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 8px #fff;
+}
+
+/* Correct guess animation */
+.lowOrHi.correct {
+  color: #00ffcc;
+  text-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffff;
+  animation: pulseGreen 1s infinite alternate;
+}
+
+/* Wrong guess animation */
+.lowOrHi.wrong {
+  color: #ff1744;
+  text-shadow: 0 0 20px #ff1744, 0 0 40px #ff0044;
+  animation: pulseRed 1s infinite alternate;
+}
+
+/* Animations */
+@keyframes pulseGreen {
+  from { transform: scale(1); }
+  to { transform: scale(1.1) rotate(-2deg); }
+}
+
+@keyframes pulseRed {
+  from { transform: scale(1); }
+  to { transform: scale(1.1) rotate(2deg); }
+}
