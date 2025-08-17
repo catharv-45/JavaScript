@@ -168,14 +168,14 @@ function checkGuess(guess){
     displayMessage(`Number is to high`);
   }
 }
-// clean the value for next
+// clean the value for next number
 function displayGuess(guess){
   userInput.value = '';
   guessSlot.innerHTML += `${guess}, `;
   numGuess++;
   remaining.innerHTML = `${11-numGuess}`
 }
-// pass the after results
+
 function displayMessage(message){
   lowOrHi.innerHTML =`<h2>${message}</h2>`;
 }
