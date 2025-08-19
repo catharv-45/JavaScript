@@ -11,3 +11,5 @@
 // there are two types of javascript code are write 
 // 1. blocking code (block the flow of Program -> read file sync)
 // 2. non blocking code (Does not block execution -> read file Async)
+
+// javascript engine has two components 1.memory heap 2.call stack
