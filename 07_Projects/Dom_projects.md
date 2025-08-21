@@ -203,3 +203,65 @@ function newGame(){
     })
 }
 ```
+
+# Unlimited color change using setInterval and clearInterval
+
+```javascript
+// generate a random color
+
+const randomColor = function(){
+  const hex = "0123456789ABCDEF";
+  let color = "#";
+  for(let i=0;i<6;i++){
+    color += hex[Math.floor(Math.random()*16)]// add index of element from hex which is randomly created by random funtion
+  }
+  return color;
+}
+console.log(randomColor());// output : #2439EA
+
+let intervalId;
+const startChangingColor = function(){
+  if(!intervalId){ // imp step
+    intervalId = setInterval(changecolor,1000);
+  }
+  
+  function changecolor (){
+    document.body.style.backgroundColor = randomColor();
+  }
+}
+const stopChangingColor = function(){
+  clearInterval(intervalId);
+  intervalId = null; // it is important to stop overriding intervalId
+}
+
+document.querySelector('#start').addEventListener('click', startChangingColor);
+
+document.querySelector('#stop').addEventListener('click',stopChangingColor);
+```
+
+# show key and keycode of clicked keyboard button
+
+```javascript
+
+console.log('Project 5');
+
+const insert =document.getElementById("insert");
+window.addEventListener('keydown',(e) => {
+  insert.innerHTML = `
+  <div class = 'color'> 
+  <table>
+  <tr>
+    <th>Key</th>
+    <th>Keycode</th>
+    <th>Code</th>
+  </tr>
+  <tr>
+    <td>${e.key === "" ? "space" : e.key }</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+  
+</table>
+</div>`
+});
+```
