@@ -26,7 +26,7 @@ const obj3 = {
 };
 const copy1 = { ...obj3 };
 copy1.nested.b = 100;
-console.log(obj3.nested.b); // 100 ❗ (changed)
+console.log(obj3.nested.b); // 100 (changed)
 
 // What is reduce method?
 //-> reduce method is used to reduce array to a single value(like sum, product)
