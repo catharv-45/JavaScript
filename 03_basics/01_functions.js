@@ -22,13 +22,13 @@ console.log("Result:", result);
 //sum(3,"a"); // output:3a
 //sum(3 ,null); //3
 
-function loginName( username ="Atharv"){
-    if(username == undefined)
+function loginName( username ="Atharv"){ // default value is "Atharv" is user don't pass any argument 
+    if(username == undefined && !username) // both check same condition
     {
-        console.log("Please enter a username");
-        return;
+        console.log("Please enter a username");   
+        return;    // function only return one time 
     }
-    return `${username} just logged in `
+    return `${username} just logged in ` // this will be not executued 
 }
 console.log(loginName("sahil")); // sahil just logged in
 console.log(loginName()); // Atharv just logged in
